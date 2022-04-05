@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Data Structure</title>
+    <style>
+        body{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;font-size: 3rem;">Pointers In C and JAVA</h1>
+    <article>
+        <h1>Pointer</h1>
+        <ul>
+            <li><p> A pointer is a variable whose value is the address of another variable</p></li>
+            <li> A pointer can also be used to refer to another pointer function.</li>
+        </ul>
+       <h1>Pointer in JAVA</h1>
+       <ul>
+           <li>Java doesn't support pointer explicitly</li>
+           <li>But java uses pointer implicitly: Java use pointers for manipulations of references but these pointers are not available for outside use</li>
+           <li>Any operations implicitly done by the language are actually NOT visible</li>
+       </ul>
+       <h3>Java doesn’t have pointers , Java has references.</h3>
+        <p><strong>Reference : </strong>A reference is a variable that refers to something else and can be used as an alias for that something else.</p>
+        <h2>C/C++ Pointers vs Java References</h2>
+    </article>
+    <table border="1" cellpadding="10px"> 
+        <thead>
+            <tr>
+                <th>Sr No.</th>
+                <th>Based On </th>
+                <th>C/C++ Pointer</th>
+                <th>Java Reference</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Definition</td>
+                <td>A pointer is a variable that contains the address of another variable. It can be dereferenced with the help of (*) operator to access the memory location to which the pointer points.</td>
+                <td>A reference is a variable that is referred to as another name for an already existing variable. The reference of a variable is created by storing the address of another variable.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Declaration</td>
+                <td>Before using a pointer variable, we should declare a pointer variable, and this variable is created by adding a '*' operator before a variable.</td>
+                <td>We can declare a reference variable by adding a '&' symbol before a variable. If this symbol is used in the expression, then it will be treated as an address operator.</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Reassignment</td>
+                <td>The pointers can be re-assigned. This reassignment is useful when we are working with the data structures such as linked list, trees, etc.</td>
+                <td>We cannot reassign the reference variable.</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Memory Address</td>
+                <td>In the case of pointers, both the pointer variable and the actual variable will have different memory addresses.</td>
+                <td>In the case of reference, both the reference and actual variable refer to the same address. The new variable will not be assigned to the reference variable until the actual variable is either deleted or goes out of the scope.</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>NULL value</td>
+                <td> The pointer variable can be assigned with a NULL value</td>
+                <td>We cannot assign the NULL value to the reference variable</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
